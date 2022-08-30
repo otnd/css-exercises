@@ -1,0 +1,126 @@
+.cards {
+    display:flex;
+    justify-content:center;
+
+}
+.card {
+    position:relative;
+    margin-top:100px;
+    margin-left:30px;
+    left:-30px;
+    width:345px;
+    background-color:#B2B2B2;
+    border-radius:25px;
+    box-shadow:1px 4px 1px gray;
+
+}
+.userlogo {
+    width:50px;
+    height:50px;
+    padding-top:8px;
+    padding-left:10px;
+}
+.user-info {
+    display:flex;
+    justify-content:space-between;
+}
+.cat {
+    margin-top:-10px;
+}
+.username {
+    position:relative;
+    font-size:20px;
+    color:black;
+    padding-top:10px;
+}
+#username1 {
+    bottom:24px;
+    right:5px;
+}
+#username2 {
+    bottom:24px;
+    right:15px;
+}
+#username3 {
+    bottom:24px;
+}
+.date {
+    position:relative;
+    padding-top:5px;
+    font-size:14px;
+    color:white;
+}
+#date1 {
+    right:123px;
+    top:10px;
+}
+#date2 {
+    right:118px;
+    top:10px;
+}
+#date3 {
+    right:132px;
+    top:10px;
+}
+.dotmenu {
+    position:relative;
+    right:10px;
+    top:14px;
+    width:36px;
+    height:30px;
+}
+.catcit {
+    font-weight:bold;
+}
+.catcomment {
+    font-size:18px;
+    padding-bottom:50px;
+    padding-left:10px;
+    padding-right:10px;
+    margin-top:15px;
+}
+.heartreact {
+    position:relative;
+    top:7.5px;
+    left:12px;
+}
+.commentbutton {
+    position:relative;
+    top:8px;
+    margin-left:10px;
+}
+@media screen and (max-width: 375px) {
+    .cards {
+    display:grid;
+
+}
+.card {
+    margin-top:10px;
+    margin-left:30px;
+    margin-right:30px;
+    width:345px;
+    background-color:#B2B2B2;
+    border-radius:25px;
+
+}
+}
+@media screen and (max-width: 768px) {
+    .cards {
+        display:grid;
+        grid-column: 1/2;
+        justify-content:left;
+    }
+.card {
+    background-color:#B2B2B2;
+    border-radius:25px;
+}
+#firstcat {
+    grid-column:1;
+}
+#secondcat {
+    grid-column:2;
+}
+#thirdcat {
+    grid-column:1;
+}
+}

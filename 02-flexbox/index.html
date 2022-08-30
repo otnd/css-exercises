@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Lezione CSS</title>
+    <style>
+        body {
+            height:100vh;
+        }
+        aside {
+            width:200px;
+            height:100%;
+            display:flex;
+            flex-direction:column;
+            align-items: center;
+            justify-content: space-between;
+            border-right:2px solid rgb(169, 169, 169);
+            border-top:2px solid rgb(179, 179, 179);
+            border-radius:3%;
+            margin-left:-10px;
+        }
+        .dogeverse-title {
+            width:280px;
+            display: flex;
+            flex-direction: column;
+            align-items:center;
+            font-size:25px;
+            color: rgb(198, 198, 0);
+            margin-bottom:30px;
+        }
+        .dogeverse-logo {
+            margin-top:40px;
+            width:80px;
+            height:80px;
+        }
+        .sideuser {
+            display:flex;
+            flex-direction: column;
+            align-items:center;
+            
+        }
+        .user-logo {
+            width:60px;
+            height:60px;
+            border:2px solid azure;
+            border-radius: 30%;
+        }
+        p {
+            font-size:18px;
+        }
+        .buttons {
+            display: flex;
+            flex-direction: row;
+            padding-left:10px;
+            padding-right:10px;
+            font-size:25px;
+            border: 1px solid #e5e5e5;
+            opacity:0.7;
+            width:120px;
+            align-items:center;
+            text-decoration:none;
+            margin-bottom:20px;
+            margin-left:20px;
+            border-radius:5%;
+            display: block;
+            text-align: center;
+            background-color: #e5e5e5;
+            color: #2b2b2b;
+            transition-property: background-color, color;
+            transition-duration: 0.3s;
+        }
+        .buttons:hover {
+            color:#2b2bb2;
+            background-color: #9b9b9b;
+        }
+        .sidebuttons {
+            width:200px;
+        }
+        hr {
+            display:flex;
+             width:170px;
+             opacity:0.7;
+             margin-bottom:50px;
+             margin-top:50px;
+        }
+    </style>
+  </head>
+
+  <body>
+    <aside>
+      <div class="Sidebar">
+          <div class="dogeverse-title">
+        <img class="dogeverse-logo" src="./74.png" alt="Dogeverse-logo" />
+        <h1>Dogeverse</h1>
+        </div>
+        <hr>
+        <div class="sidebuttons"></div>
+        <ul>
+        <a href="#" class="buttons">Home</a>
+        <a href="#" class="buttons">Our NFT</a>
+        <a href="#" class="buttons">Project</a>
+        <a href="#" class="buttons">Dogecity</a>
+        </ul>
+        <hr>
+        </div>
+        <div class="sideuser">
+        <img class="user-logo" src="./51SdJg29gxL.png" alt="User-logo">
+        <p>Davide Morrone</p>
+        </div>
+      </div>
+    </aside>
+    <main>
+      <div></div>
+    </main>
+  </body>
+</html>

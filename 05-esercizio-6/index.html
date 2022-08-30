@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .navbar {
+            display:flex;
+            flex-direction: row;
+            align-items:center;
+            justify-content: space-between;
+            background-color:#232429;
+        }
+        a {
+            margin-left:20px;
+            text-decoration:none;
+            font-size:20px;
+            color:white;
+        }
+        span {
+            position:relative;
+            bottom:2px;
+            color:white;
+            font-weight:100px;
+            margin-left:5px;
+        }
+        #disabled {
+            color:gray;
+        }
+        #navbartext {
+            font-size:24px;
+            margin-right:20px;
+        }
+        .searchbar {
+            margin-right:10px;
+        }
+        input {
+            font-size:23px;
+            border-radius:5px;
+            border:1px solid black;
+        }
+        button {
+            margin-right:15px;
+            margin-left:15px;
+            position:relative;
+            top:-2px;
+            color:green;
+            border:1px solid green;
+            border-radius:5px;
+            font-size:17px;
+            font-weight:bold;
+            padding-top:7px;
+            padding-bottom:6px;
+            background-color: #232429;
+        }
+        button:hover {
+            color:white;
+            background-color:green;
+        }
+        .menu {
+            display:none;
+        }
+        @media all and (max-width: 768px) {
+            .navbar {
+            display:flex;
+            flex-direction: row;
+            justify-content:left;
+            align-items:left;
+            background-color:#232429;
+        }
+        span {
+            display:none;
+        }
+        #disabled {
+            display:none;
+        }
+        #navbartext {
+            font-size:40px;
+        }
+        .searchbar {
+            display:none;
+        }
+        .buttons {
+            display:none;
+        }
+        input {
+            display:none;
+        }
+        button {
+            display:none;
+        }
+      .menu {
+          display:flex;
+            width: 35px;
+            height: 5px;
+            background-color: black;
+            margin: 6px 0;
+            width:30px;
+            height:30px;
+            margin-left:210px;
+        }
+        }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a id="navbartext" href="navbar">Navbar</a>
+        <img class="menu" src="./hamburger.png" alt="hamburger">
+        <div class="navbar">
+          <ul>
+            <a class="buttons" href="#">Home</a>
+            <a class="buttons" href="#">Link</a>
+            <a class="buttons" href="#">Dropdown</a><span>&#x2304;</span>
+            <a class="buttons" id="disabled">Disabled</a>
+          </ul>
+        </div>
+        <div class="searchbar">
+          <form>
+            <label id="searchlabel" for="search"></label>
+            <input type="search" id="search" placeholder="Search" />
+            <button type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+    </header>
+  </body>
+</html>
